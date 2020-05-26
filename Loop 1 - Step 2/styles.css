@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1vw;
+    font-family: Roboto, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    height: 100vh;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #fff;
+    width: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid lightgray;
+}
+
+header h1 {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.dots {
+    width: fit-content;
+}
+
+.dot {
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: lightgray;
+    margin: 2px;
+}
+
+.dot:first-child {
+    background-color: gray;
+}
+
+.method, header, footer {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.method {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.type-of-card {
+    display: flex;
+    align-items: center;
+}
+
+.card-logo {
+    height: 2.3em;
+    width: 2.3em;
+    margin-right: 15px;
+}
+
+.type-of-card p {
+    font-size: .8rem;
+    color: gray;
+}
+
+.type-of-card .active {
+    color: #111;
+}
+
+footer {
+    height: 3rem;
+    background-color: royalblue;
+}

@@ -1,0 +1,100 @@
+/*
+==================================
+General styles
+==================================
+*/
+
+body {
+    min-height: 100vh;
+    background-color: #16A085;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*
+==================================
+Typography
+==================================
+*/
+
+.card-title {
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: .75rem;
+}
+
+.card-fine-print {
+    font-size: .95rem;
+    color: #bab8b5;
+    font-weight: 300;
+    margin-bottom: 1.75rem;
+}
+
+.card-item,
+.card-total {
+    color: #5a6587;
+}
+
+.card-item {
+    font-size: 1.1rem;
+    margin-bottom: 1.35rem;
+}
+
+.card-total,
+.price {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.price {
+    color: #111;
+}
+
+/*
+==================================
+Card
+==================================
+*/
+
+.card {
+    background-color: #fff;
+    padding: 3em;
+    border-radius: 5px;
+    min-height: 450px;
+    max-width: 800px;
+    box-shadow: 0px 11px 20px 0px rgba(0,0,0,0.56);
+    background-image: url('img/bicycle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 170px;
+}
+
+.account-icon {
+    background: url('img/account.svg');
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    height: 1.45em;
+    width: 1.45em;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 0px .3px rgba(186,184,181,1);
+    background-size: .8em;
+    transition: box-shadow 250ms;
+}
+
+.account-icon:hover,
+.account-icon:focus {
+    box-shadow: 0px 0px 0px 5px rgba(186,184,181,1);
+}
+
+.card-title,
+.card-item,
+.card-total {
+    display: flex;
+    justify-content: space-between;
+}
