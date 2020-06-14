@@ -1,0 +1,180 @@
+/*
+==========================
+General styles
+==========================
+*/
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8ebe9;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*
+==========================
+Typography
+==========================
+*/
+.card__link {
+    color: #999;
+    font-size: .9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.card__link:hover,
+.card__link:focus,
+.card__link--active {
+    color: #111;
+}
+
+.card__title,
+.card__byline {
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.card__title {
+    font-size: 4.5rem;
+    margin-bottom: .15em;
+}
+
+.line {
+    display: inline-block;
+    height: 5px;
+    background: #111;
+    vertical-align: middle;
+    width: 7rem;
+}
+
+.card__byline {
+    font-style: normal;
+    font-size: 1.15rem;
+}
+
+.card__text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+/*
+==========================
+Card
+==========================
+*/
+.card {
+    display: flex;
+    width: 70%;
+    overflow: hidden;
+    min-height: 800px;
+    box-shadow: 0 30px 20px -15px rgba(50, 50, 50, .5);
+}
+
+.card__showcase {
+    padding: 2em 1em;
+    width: 1000px;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+}
+
+.card__back,
+.card__foward {
+    display: inline-block;
+    font-size: inherit;
+    width: 1.05em;
+    height: 1.05em;
+}
+
+.card__back {
+    margin-right: 5px;
+    fill: currentColor;
+}
+
+.card__flex {
+    display: flex;
+    align-items: center;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1em;
+    background-color: #fff;
+}
+
+.card__nav {
+    display: flex;
+    align-self: flex-end;
+}
+
+.card__nav > .card__link {
+    margin-right: 1.5em;
+}
+
+.img-wrapper {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.img-wrapper::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-image: url(../img/play.svg);
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+}
+
+.card__thumbnail {
+    max-width: 225px;
+    margin-bottom: .75em;
+    display: block;
+    position: relative;
+}
+
+.card__content {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 6.5em;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card__content-header {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.card__images {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__foward {
+    margin-left: 5px;
+}
+
+.card__text {
+    width: 45%;
+}
+
+* {
+    overflow: visible !important;
+}
